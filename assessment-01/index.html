@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assessment 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function myfunction() {
+            document.getElementById('text').innerHTML = "Stop yo jibba jabba";
+        }
+    </script>
+    <script src = "scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Assessment 1</h1>
+    </header>
+    <main>
+        <img src="images/Optimusg1.jpg" alt="Pictures of pop culture icons" id="icon" class="center">
+        
+        <div class="buttons">
+            <button onclick = "document.getElementById('icon').src='images/Optimusg1.jpg'">Autobots, Roll Out!</button>
+            <button onclick = "document.getElementById('icon').src='images/mr_t_blue.jpg'">Pity the Fool</button>
+            <button onclick = "document.getElementById('icon').src='images/he-man.png'">By the power of Grayskull!</button>
+        </div>
+        <p id="text" style="text-align: center;"></p>
+        <script>
+            document.getElementById('text').innerHTML = "Freedom is the right of all sentient beings.";
+        </script>
+        <div class="buttons">
+            <button type = "button" onclick="myfunction()">Jibba Jabba</button>
+            <button type = "button" onclick="myfunction2()">Power</button>
+         <div class="buttons">
+            <button onclick = "document.getElementById('icon').style.width='300px'">Big Picture</button>
+            <button onclick = "document.getElementById('text').style.color='purple'">Purple Prose</button>
+        </div>
+        
+        </div>
+         <div class="buttons">
+            <button onclick = "document.getElementById('icon').style.display='block'">Show</button>
+            <button onclick = "document.getElementById('icon').style.display='none'">Hide</button>
+        </div>
+    </main>
+
+</body>
+</html>

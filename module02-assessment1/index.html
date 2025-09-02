@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=IM+Fell+English:ital@0;1&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
+    <title>Menu</title>
+</head>
+<body onload="reset()">
+    <header>
+    <h1 class="im-fell-english-regular">Menu</h1>
+    <div class="header-subtitle">
+        <h1 class="estonia-regular" style="font-size: 300px;">OxBellow</h1>
+        <h2 class="im-fell-english-regular">Gastropub and Cocktail Lounge</h2>
+        <h2 class="estonia-regular" style="font-size: 70px;">Fine Dining, Casual Vibes.</h2></div>
+    </header>
+    <main class="container menu-row">
+        <div class="menu" id="sandwiches">
+            <h2 class="estonia-regular" style="background-color: var(--primary-dark)"><strong>Sandwiches</strong></h2>
+
+            <div style="display: block"><p class="food">Bacon Bison Swissburger</p>
+            <p class="description">A delicious burger with Swiss cheese, Applewood smoked bacon, on a premium grass-fed bison patty and all the fixings. $16.</p></div>
+            <label for="burger">Quantity</label>
+            <input type="text" id="burger" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Philly Cheesesteak</p>
+            <p class="description">A classic sandwich with thinly sliced beef, melted cheese, and sautéed onions. $13.</p></div>
+            <label for="cheesesteak">Quantity</label>
+            <input type="text" id="cheesesteak" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">French Dip</p>
+            <p class="description">A savory sandwich with thinly sliced roast beef and melted cheese on a toasted baguette, served with a cup of au jus for dipping. $12.</p></div>
+            <label for="french-dip">Quantity</label>
+            <input type="text" id="french-dip" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Buffalo Chicken Wrap</p>
+            <p class="description">A spicy wrap filled with crispy chicken, buffalo sauce, and blue cheese dressing. $10.</p></div>
+            <label for="buffalo-chicken-wrap">Quantity</label>
+            <input type="text" id="buffalo-chicken-wrap" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">The Dominic Special</p>
+            <p class="description">My son's favorite concoction: swiss cheese and peanut butter on white bread. So simple, so strange, so scrumptious! $7.</p></div>
+            <label for="dominic-special">Quantity</label>
+            <input type="text" id="dominic-special" width: 20 /> <br/>
+            <hr><label for="sandwich-total" style="font-family: 'IM Fell English', serif;">Sandwich Subtotal</label>
+            <input type="text" id="sandwich-total" width: 20></div>
+
+        </div>
+
+        <div class="menu" id="cocktails">
+            <h2 class="estonia-regular" style="background-color: var(--primary-dark)"><strong>Cocktails</strong></h2>
+
+            <div style="display: block"><p class="food">Classic Martini</p>
+            <p class="description">Tanquerray 10 and Dolin Dry Vermouth. Very dirty. Very dry. Comes with your choice of Blue Cheese or Garlic-Jalapeno Stuffed Olives...or a combination of both! $15.</p></div>
+            <label for="classic-martini">Quantity</label>
+            <input type="text" id="classic-martini" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Manhattan</p>
+            <p class="description">A classic cocktail made with Rittenhouse rye whiskey, Carpano Antica Sweet Vermouth, and Angostura Bitters, garnished with maraschino cherries. $13.</p></div>
+            <label for="manhattan">Quantity</label>
+            <input type="text" id="manhattan" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Old Fashioned</p>
+            <p class="description">The OG cocktail made with Buffalo Trace bourbon, sugar, and bitters, garnished with cherries and an orange twist. $13.</p></div>
+            <label for="old-fashioned">Quantity</label>
+            <input type="text" id="old-fashioned" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Sidecar</p>
+            <p class="description">A delightful speakeasy favorite made with Courvoisier Cognac, Cointreau orange liqueur, and lemon juice, served in a sugar-rimmed glass. $13.</p></div>
+            <label for="sidecar">Quantity</label>
+            <input type="text" id="sidecar" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Frozen Strawberry Margarita</p>
+            <p class="description">A refreshing blend of frozen strawberries, Roca Patron Silver tequila, Cointreu orange liqueur, agave syrup, and lime juice, served in a salt-rimmed glass. $12.</p></div>
+            <label for="frozen-strawberry-margarita">Quantity</label>
+            <input type="text" id="frozen-strawberry-margarita" width: 20 /> <br/>
+            <hr>
+            <label for="cocktail-total" style="font-family: 'IM Fell English', serif;">Cocktail Subtotal</label>
+            <input type="text" id="cocktail-total" width: 20>
+        </div>
+    <div class="menu" id="desserts">
+            <h2 class="estonia-regular" style="background-color: var(--primary-dark)"><strong>Desserts</strong></h2>
+
+            <div style="display: block"><p class="food">Chocolate Lava Cake</p>
+            <p class="description">A rich and gooey chocolate cake with a molten center, served with vanilla ice cream. $9.</p></div>
+            <label for="chocolate-lava-cake">Quantity</label>
+            <input type="text" id="chocolate-lava-cake" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Cheesecake</p>
+            <p class="description">A classic New York-style cheesecake with a graham cracker crust, served with fresh berries. $7.</p></div>
+            <label for="cheesecake">Quantity</label>
+            <input type="text" id="cheesecake" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Key Lime Pie</p>
+            <p class="description">A tangy and refreshing dessert made with key lime juice, sweetened condensed milk, and a graham cracker crust. $7.</p></div>
+            <label for="key-lime-pie">Quantity</label>
+            <input type="text" id="key-lime-pie" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Brownie a la Mode</p>
+            <p class="description">A warm brownie topped with vanilla ice cream and drizzled with chocolate sauce. $9.</p></div>
+            <label for="brownie-a-la-mode">Quantity</label>
+            <input type="text" id="brownie-a-la-mode" width: 20 /> <br/>
+            <hr>
+           <div style="display: block"><p class="food">Frozen Grasshopper</p>
+            <p class="description">A refreshing blend of mint liqueur and chocolate liqueur blended with vanilla ice cream. $12.</p></div>
+            <label for="frozen-grasshopper">Quantity</label>
+            <input type="text" id="frozen-grasshopper" width: 20 /> <br/>
+            <hr>
+            <label for="dessert-total" style="font-family: 'IM Fell English', serif;">Dessert Subtotal</label>
+            <input type="text" id="dessert-total" width: 20>
+        </div>
+        </div>
+        </main>
+        
+    
+    <div class="bottom">
+            <label for="name" style="font-family: 'IM Fell English', serif; color: var(--text-light); font-size: 36px;">Name for the Order:</label>
+            <input type="text" id="name" width: 20><br>    
+            <button type="button" onclick="total()">Total Cost</button>
+                <h2 style="font-family: 'IM Fell English', serif; color: var(--text-light); font-size: 36px;">Order Summary:</h2>
+            <hr><label for="sandwich-subtotal" style="font-family: 'IM Fell English', serif;">Sandwich Subtotal</label>
+            <input type="text" id="sandwich-subtotal" width: 20>
+                <hr>
+            <label for="cocktail-subtotal" style="font-family: 'IM Fell English', serif;">Cocktail Subtotal</label>
+            <input type="text" id="cocktail-subtotal" width: 20>
+            <hr>
+            <label for="dessert-subtotal" style="font-family: 'IM Fell English', serif;">Dessert Subtotal</label>
+            <input type="text" id="dessert-subtotal" width: 20>
+            <hr>
+            <p id="meal-total"></p>
+        </body>
+        <footer>
+            <p style="font-family: 'IM Fell English', serif;">Bob Peck</p>
+        </footer>
+</html>

@@ -1,0 +1,352 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Modified by Robert Peck for the current project
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+label{
+    font-family: m-plus-rounded-1c-regular;
+    font-size: 20px;
+}
+
+.food{
+    font-family: im-fell-english-regular;
+    font-size: 30px;
+}
+
+.description{
+    font-family: estonia;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --primary: #2B1A1C;
+    --primary-light: #2D1F24;
+    --primary-dark: #1C1B24;
+    --secondary: #693629;
+    --secondary-light: #E18E40;
+    --secondary-dark: #403D1E;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: var(--text-dark);
+    background-color: var(--secondary)
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.top-header{
+    position: fixed;
+}
+
+footer,
+main,
+aside,
+article,
+div {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: var(--text-light);
+}
+
+.left {
+    clear: both;
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    clear: both;
+    float: right;
+    padding: 20px;
+}
+
+.center {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px auto;
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-light);
+    font-family: var(--font-family);
+    min-height: 80px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 80px;
+    color: var(--text-light);
+}
+
+h3 {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.buttons {
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button {
+    color: var(--text-dark);
+    border: 2px solid var(--secondary-light);
+    background: var(--secondary-light);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 36px;
+    font-family: m-plus-rounded-1c-regular;
+}
+
+button:hover {
+    color: var(--text-light);
+    background: var(--secondary);
+    border: 2px solid var(--secondary-dark);
+}
+
+p {
+    padding: 5px;
+}
+
+.menu {
+    width: 30%;
+    margin: 0;
+    border: 3px solid var(--primary-dark);
+    background-color: var(--secondary-light);
+    padding: 10px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-subtitle{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/burger.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    min-height: 800px;
+    margin-left: calc(-50vw + 50%);
+    padding: 20px;
+}
+
+.top,
+.bottom {
+    margin: 25px 30px;
+    text-align: center;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular-italic {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.estonia-regular {
+  font-family: "Estonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

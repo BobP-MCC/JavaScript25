@@ -1,0 +1,430 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+label {
+    font-family: var(--font-secondary);
+    font-size: 1.2em;
+}
+
+option {
+    font-family: var(--font-secondary);
+    font-size: 1.2em;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --primary: #4f1909;
+    --primary-light: #8559da;
+    --primary-dark: #140078;
+    --secondary: #ffc107;
+    --secondary-light: #fff350;
+    --secondary-dark: #c79100;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --font-primary: 'Gentium Book Plus', serif;
+    --font-secondary: 'League Spartan', sans-serif;
+}
+
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: var(--text-light);
+}
+
+.left {
+    clear: both;
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    clear: both;
+    float: right;
+    padding: 20px;
+}
+
+.center {
+    clear: both;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+img {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 20px auto;
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-light);
+    min-height: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: left;
+    margin: 20px;
+    font-size: 3em;
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: 4em;
+    font-family: var(--font-primary);
+}
+
+h3 {
+    font-size: 2em;
+    margin: 10px;
+    font-family: var(--font-secondary);
+}
+
+h4 {
+    font-size: 2em;
+    margin: 10px;
+    font-family: var(--font-primary);
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: var(--font-secondary);
+}
+
+.buttons {
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button {
+    color: var(--text-light);
+    border: 2px solid var(--primary-dark);
+    background: var(--primary-dark);
+    text-decoration: none;
+}
+
+button:hover {
+    color: var(--primary-dark);
+    background: var(--secondary-light);
+}
+
+p {
+    padding: 10px;
+}
+
+#word {
+    padding-left: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* responsive*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.col-6 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+}
+
+.col-2 {
+    float: left;
+    width: 16.66%;
+    padding: 15px;
+    text-align: center;
+}
+
+.col-3 {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.league-spartan-100 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gentium-book-plus-regular {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gentium-book-plus-bold {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gentium-book-plus-regular-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gentium-book-plus-bold-italic {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.row.center {
+  display: flex;
+  justify-content: center; /* horizontal align */
+  align-items: center; /* vertical align */
+  gap: 0.5rem;         /* spacing between buttons */
+}
+
+.form-check {
+  display: inline-flex;   /* keep label next to input */
+  align-items: center;
+  margin: 0;              /* remove block margins */
+}
+
+/* Optional: reduce space between input and label */
+.form-check .form-check-label {
+  margin-left: 0.25rem;
+}
+
+.dropdown {
+            width: 160px;
+            padding: 10px;
+        }
+.dropdown-button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        /* Hide the Menu Items*/
+.menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            min-width: 160px;
+        }
+.mood-item,
+.person-item,
+.number-item,
+.tense-item,
+.voice-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+.row.dropdowns {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  justify-content: center; /* or space-between */
+  align-items: flex-start;
+}
+
+.dropdown { position: relative; width: 160px; }
+.menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  z-index: 999;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+select {
+width: 180px;
+padding: 10px 12px;
+font-size: 1.1rem; 
+line-height: 1.3;
+border-radius: 6px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}

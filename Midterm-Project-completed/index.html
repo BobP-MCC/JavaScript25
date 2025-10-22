@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Verb Syntax Quiz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Latin Verb Syntax Quiz</h1>
+    </header>
+    <main>
+        <p class="center">Identify the syntax of the verb. You may consult the principle parts of the verb if you would like. You have three tries. Bona Fortuna!</p>
+    <div>
+        <div class="row">
+        <div class="col-6">
+            <h3>Latin Word</h3>
+            <h2 id="conjugated-word"></h2>
+        </div>
+        <div class="col-6">
+            <h3>English Translation</h3>
+            <h2 id="translation"></h2>
+        </div>
+        </div>
+
+        <div class="center"><h3>Show principal parts?</h3></div>
+        
+        <div class="row center">
+            <button id="yes" onclick="hint()">Yes</button>
+            <button id="no" onclick="hideHint()">No</button>
+        </div>
+    
+    <div id="principal-parts"></div>
+    </div>
+
+<div class="row center">
+    <div class="col-2 center">
+    <label for="mood">Mood</label><br>
+                <select id="mood" name="mood" onclick = "mood()">
+            <option value="Indicative">Indicative</option>
+            <option value="Subjunctive">Subjunctive</option>
+            <option value="Imperative">Imperative</option>
+        </select>
+    </div>
+<div class="col-2 center">
+    <label for="person">Person</label><br>
+                <select id="person" name="person" onclick = "person()">
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+        </select>
+</div>
+<div class="col-2 center">
+    <label for="number">Number</label><br>
+                <select id="number" name="number" onclick = "number()">
+            <option value="Singular">Singular</option>
+            <option value="Plural">Plural</option>
+        </select>
+</div>
+<div class="col-2 center">
+    <label for="tense">Tense</label><br>
+                <select id="tense" name="tense" onclick = "tense()">
+            <option value="Present">Present</option>
+            <option value="Imperfect">Imperfect</option>
+            <option value="Future">Future</option>
+            <option value="Perfect">Perfect</option>
+            <option value="Pluperfect">Pluperfect</option>
+            <option value="Future Perfect">Future Perfect</option>
+        </select>
+</div>
+<div class="col-2 center">
+    <label for="voice">Voice</label><br>
+                <select id="voice" name="voice" onclick = "voice()">
+            <option value="Active">Active</option>
+            <option value="Passive">Passive</option>
+        </select>
+</div>
+</div>
+<div id="button"></div>
+<!-- <button class="center" onclick="checkAnswer()">Submit</button> -->
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Bob Peck</p>
+    </footer>
+</body>
+<script src="script/latinquiz.js">
+</script>
+</html>

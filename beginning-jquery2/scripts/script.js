@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("p").hide();
+  });
+  $("#button2").click(function(){
+    $("#ninja").hide();
+  });
+  $("h2").click(function(){
+    $(this).hide();
+    });
+});

@@ -1,0 +1,17 @@
+$(document).ready(function(){
+  $("#apparate").click(function(){
+    $("#dumbledore").show();
+  });
+  $("#disapparate").click(function(){
+    $("#dumbledore").hide();
+  });
+  $("#mapshow").click(function(){
+    $("#map").fadeIn();
+  });
+  $("#maphide").click(function(){
+    $("#map").fadeOut();
+  });
+  $("#flue").click(function(){
+    $("#fluepowder").slideToggle();
+  });
+});

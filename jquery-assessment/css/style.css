@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 90px;
+    font-family: 'Bungee Spice';
+}
+
+.subtitle {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    color: rgb(4, 85, 70);
+    padding: 5px;
+}
+
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 70px;
+    font-family: 'Rubik 80s Fade';
+    background-color: rgb(4, 85, 70);
+    color: rgb(241, 254, 0);
+    padding: 10px;
+
+}
+
+p {
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(226, 71, 28);
+    color: white;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 40px;
+}
+
+.rubik-80s-fade-regular {
+  font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bungee-shade-regular {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#movespace {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+#et, #phone-home {
+  padding: 5px;
+  font-size: 32px;
+  text-align: center;
+  border: solid 1px #666;
+  border-radius: 3px;
+  font-family: 'Bungee Spice', sans-serif;
+
+}
+
+#et {
+  padding: 50px;
+  display: none;
+  overflow: hidden;
+}
+
+#MrT-image {
+    width: auto;
+    height: 800px;
+}
+
+#optimus-robot {
+    width: auto;
+    height: 800px;
+    display: none;
+}

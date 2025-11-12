@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.masquerade-background{
+    background-image: url('../images/masquerade-background.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.masquerade-button-group {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.masquerade-button-group button {
+    background-color: #19a77f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+}
+
+.masquerade-header{
+    font-size: 48px;
+    color: white;
+    background-color: #19a77f;
+    font-family: 'Georgia', serif;
+    padding: 30px 30px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+}
+
+.masquerade-main{
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    font-size: 24px;
+    width: 80%;
+}
+
+.masquerade-main button{
+    background-color: #19a77f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+}
+
+.masquerade-footer{
+    background-color: #19a77f;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.halloween-background{
+    background-image: url('../images/halloween-background.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.halloween-button-group {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.halloween-button-group button {
+    background-color: #a75419;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Freckle Face", system-ui;
+}
+
+.halloween-header{
+    font-size: 48px;
+    color: white;
+    background-color: #a75419;
+    font-family: "Freckle Face", system-ui;
+    padding: 30px 30px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+}
+
+.halloween-main{
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    background-color: #3f3b3b;
+    color: white;
+    font-size: 24px;
+    width: 80%;
+}
+
+.halloween-main button{
+    background-color: #a75419;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Freckle Face", system-ui;
+}
+
+.halloween-footer{
+    background-color: #a75419;
+    color: white;
+    font-family: 'Freckle Face', system-ui;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.freckle-face-regular {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
